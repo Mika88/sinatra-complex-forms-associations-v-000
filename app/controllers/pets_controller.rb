@@ -28,7 +28,6 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     @owners = Owner.all
     erb :'/pets/edit'
-    binding.pry
   end
 
   patch '/pets/:id' do
